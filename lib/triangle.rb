@@ -28,7 +28,7 @@ class Triangle
       begin
         raise TriangleError
         binding.pry
-        puts 
+        puts
       end
 
     end
