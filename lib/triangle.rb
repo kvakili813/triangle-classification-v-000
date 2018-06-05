@@ -10,7 +10,13 @@ class Triangle
   end
 
   def kind
-    if (side_1 == side_2) && (side_2 == side_3)
+  if (side_1 == 0) && (side_2 == 0) && (side_3 == 0)
+    begin
+      raise TriangleError
+      binding.pry
+      puts
+    end
+  elsif (side_1 == side_2) && (side_2 == side_3)
       :equilateral
     elsif (side_1 < side_2) && (side_2 == side_3)
       :isosceles
@@ -24,12 +30,7 @@ class Triangle
       :scalene
     elsif (side_1 < 1) && (side_2 < 1) && (side_3 < 1)
       :scalene
-    elsif (side_1 == 0) && (side_2 == 0) && (side_3 == 0)
-      begin
-        raise TriangleError
-        binding.pry
-        puts
-      end
+    
 
     end
   end
