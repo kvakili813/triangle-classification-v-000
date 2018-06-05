@@ -23,11 +23,7 @@ class Triangle
       :isosceles
     elsif (side_1 == side_2) && (side_2 > side_3)
       :isosceles
-    elsif (side_1 < side_2) && (side_2 < side_3)
-      :scalene
-    elsif (side_1 > side_2) && (side_2 > side_3)
-      :scalene
-    elsif (side_1 < 1) && (side_2 < 1) && (side_3 < 1)
+    else
       :scalene
 
 
